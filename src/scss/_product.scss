@@ -1,0 +1,52 @@
+.product{
+    position: relative;
+    overflow: hidden;
+    // background: #582EF0;
+
+    img{
+     object-fit: cover;
+     height: 9rem;
+     width: 100%;
+     
+
+
+       
+    }
+    button{
+        position: absolute;
+        bottom: 25%;
+        right: 0;
+        padding: 0.2rem 0.4rem;
+        border-radius: 5px;
+        background: #582EF0;
+        border: transparent;
+        text-transform: capitalize;
+        transform: translate(102%,100%);
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            color: white;
+        }
+     
+    }
+
+    p{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3rem;
+
+    }
+
+    &:hover{
+       button{
+        transform: translate(0,0%);
+        transition: all 0.5s ease-in-out;
+       }
+
+       img{
+           transform: scale(1.02);
+           transition: all 0.5s ease-in-out;
+       }
+    }
+}

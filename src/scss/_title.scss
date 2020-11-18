@@ -1,0 +1,27 @@
+@mixin text {
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.title{
+ 
+    width: 100%;
+
+    text-align: center;
+
+    h2{
+      @include text()
+      
+
+
+    }
+
+    h3{
+@include text();
+color:rgb(15, 15, 59);
+    }
+}

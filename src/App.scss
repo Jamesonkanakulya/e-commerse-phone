@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footerhead {
+  margin-top: 5rem;
+
+  .sancorp {
+    position: relative;
+
+    justify-content: center;
+
+    img {
+      height: 2rem;
+      object-fit: contain;
+      align-self: center;
+      margin-left: 35%;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      background: rgb(236, 167, 63);
+      width: 70%;
+      // border: 2px solid red;
+      height: 0.5rem;
+      top: -0.4rem;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: black;
+      width: 70%;
+      // border: 2px solid red;
+      height: 0.5rem;
+      bottom: -0.3rem;
+      right: 0;
+    }
+  }
+}
+
+.my {
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: auto 0.1rem;
+
+  .icons {
+    background: rgb(238, 164, 28);
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+
+  span {
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 0.3rem;
+  }
+}
+
+@import "./scss/home";
+@import "./scss/navbar";
+@import "./scss/product";
+@import "./scss/title";
+@import "./scss/detailsproduct";
+@import "./scss/model";

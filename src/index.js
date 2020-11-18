@@ -3,10 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PhoneProvider from './components/context';
+import {BrowserRouter as Router} from 'react-router-dom'
+import { StateProvider } from './components/StateProvider';
+import reducer,{initialState} from './components/reducer'
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+ <Router>
+ <PhoneProvider>
+   <StateProvider  initialState={initialState} reducer={reducer}>
+   <App />
+   </StateProvider>
+     
+   </PhoneProvider>
+    
+ </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

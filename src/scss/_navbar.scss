@@ -1,0 +1,44 @@
+.nav-bar{
+    width: 100%;
+    background: #120054;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem ;
+    
+    .main-title{
+        margin-left: 15%;
+        text-transform: capitalize;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover{
+            color:#582EF0 ;
+            transition: all 0.3s ease;
+        }
+
+     
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+    .logo{
+        margin-left: 2%;
+
+    }
+
+
+
+    .chart-button{
+      margin-left: 60%;
+
+      @media (max-width:900px) {
+        margin-left: 30%;
+      }
+    }
+
+
+}
